@@ -46,7 +46,7 @@
 			</main>
 			
 			<section>
-				<button class="fat btn btn-light border border-primary   shadow">+ Adicionar ideia</button>
+				<button onclick="onOff()" class="fat btn btn-light border border-primary   shadow">+ Adicionar ideia</button>
 				<button class="btn btn-primary shadow">Ver ideias</button>
 			</section>
 			
@@ -57,7 +57,7 @@
 
 		<section id="last-ideas" class="pt-4">
 
-			<div class="idea d-flex mb-4 bg-white border border-primary rounded p-3 shadow-sm">
+			<div class="idea d-flex mb-4 bg-white  rounded p-3 shadow-sm">
 				<img src="https://image.flaticon.com/icons/svg/2762/2762535.svg" alt="Imagem do curso de programação" class="m-4">
 				<div class="content">
 					<h5>Cursos de Programação</h5>
@@ -69,7 +69,7 @@
 				</div>
 			</div>
 
-			<div class="idea d-flex mb-4 bg-white border border-primary rounded p-3 shadow-sm">
+			<div class="idea d-flex mb-4 bg-white  rounded p-3 shadow-sm">
 				<img src="https://image.flaticon.com/icons/svg/254/254024.svg" alt="Imagem do curso de oratória" class="m-4">
 				<div class="content">
 					<h5>Cursos de Oratória</h5>
@@ -81,7 +81,7 @@
 				</div>
 			</div>
 
-			<div class="idea d-flex mb-4 bg-white border border-primary rounded p-3 shadow-sm">
+			<div class="idea d-flex mb-4 bg-white  rounded p-3 shadow-sm">
 				<img src="https://image.flaticon.com/icons/svg/372/372564.svg" alt="Imagem de musculação" class="m-4">
 				<div class="content">
 					<h5>Musculação</h5>
@@ -96,7 +96,49 @@
 		</section>
 	</div>
 
-	
+	<!-- Modal -->
+	<div id="modal" class="hide bg-primary">
+		<div id="content">
+			<h1>Nova ideia</h1>
+
+			<form action="">
+			
+				<div class="input-wrapper">
+					<label for="title">Título da ideia</label>
+					<input type="text" name="title">
+				</div>
+
+				<div class="input-wrapper">
+					<label for="category">Categoria</label>
+					<input type="text" name="category">
+				</div>
+
+				<div class="input-wrapper">
+					<label for="image">Link da imagem</label>
+					<input type="url" name="image">
+				</div>
+
+				<div class="input-wrapper">
+					<label for="description">Digite uma descrição para essa ideia</label>
+					<textarea name="description" cols="30" rows="10"></textarea>
+				</div>
+
+				<div class="input-wrapper">
+					<label for="link">Link da ideia</label>
+					<input type="url" name="link">
+				</div>
+
+				<span>
+					<button class="btn btn-light mt-4 w-3" onclick="onOff()">Voltar</button>
+					<button class="btn btn-light mt-4 float-right">Salvar</button>
+				</span>
+				
+				<a href="#" onclick="onOff()">Voltar</a>
+			
+			</form>
+
+		</div>
+	</div>
 
 
 	<!-- Optional JavaScript -->

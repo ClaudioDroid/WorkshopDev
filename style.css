@@ -31,13 +31,54 @@ body{
     height: 60px;
 }
 
+form a{
+    background: #;
+}
 
 
+/* Modal */
+#modal{
+    position: absolute; /* Habilita novas possibilidades de posicionamento */
+    top: 0;
+
+    width: 100vw; /* É exibido em toda largura visível na tela */
+    height: 100vw; /* É exibido em toda altura visível na tela */
 
 
+    display: flex; /* habilita as opções abaixo */
+    /*align-items: center; /* Alinha o eixo Y */
+    justify-content: center; /* Alinha o eixo X */
+}
 
+#modal{
+    color: white;
+    text-transform: uppercase;
+}
 
+#modal h1{
+    text-align: center;
+}
 
+#modal form{
+    width: 80%;
+    max-width: 800px;
+    
+    margin: 0 auto;
+
+    display: grid;
+}
+
+#modal form input, form textarea{
+    width: 100%;
+}
+
+#modal.hide{
+    display: none;
+}
+
+#modal button{
+    width: 200px;
+}
 
 
 
