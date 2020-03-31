@@ -1,0 +1,45 @@
+body{
+    font-family: font-family: 'Montserrat', sans-serif;;
+}
+
+#container{
+    width: 90%;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+#intro{
+    width: 300px;
+}
+
+#last-ideas{
+    max-width: 500px;
+}
+
+#last-ideas .description{
+    font-size: 0.8em;
+}
+
+.hide{
+    display: none;
+}
+
+.idea img{
+    width: 60px;
+    height: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
