@@ -40,9 +40,13 @@ form a{
 #modal{
     position: absolute; /* Habilita novas possibilidades de posicionamento */
     top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
-    width: 100vw; /* É exibido em toda largura visível na tela */
-    height: 100vw; /* É exibido em toda altura visível na tela */
+    /*width: 100vw; /* É exibido em toda largura visível na tela */
+    /*height: 100vw; /* É exibido em toda altura visível na tela */
+
 
 
     display: flex; /* habilita as opções abaixo */
